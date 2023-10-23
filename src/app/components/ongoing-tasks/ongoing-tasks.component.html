@@ -1,0 +1,13 @@
+<section>
+  <div class="flex justify-between mb-3">
+    <h2 class="font-bold text-2xl">Ongoing Task</h2>
+    <a routerLink="/tasks" class="text-[#546FFF] font-semibold">
+      See All Task
+    </a>
+  </div>
+  <ul class="grid gap-3 lg:grid-cols-2 ">
+    <li *ngFor="let task of onGoingTasks">
+      <app-task-card [task]="task" />
+    </li>
+  </ul>
+</section>
