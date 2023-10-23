@@ -1,0 +1,8 @@
+<div class="relative overflow-x-hidden min-h-screen flex bg-[#F5F5F5]">
+        <div class="absolute lg:relative top-0 h-full w-[75vw] max-w-[252px]" [ngClass]="isOpen ? 'left-0' : 'left-[-100%] lg:left-0'">
+                <app-sidebar></app-sidebar>
+        </div>
+        <div class="grow">
+                <app-dashboard-top-bar (onToggleNav)="toggleNav()"></app-dashboard-top-bar>
+        </div>
+</div>
