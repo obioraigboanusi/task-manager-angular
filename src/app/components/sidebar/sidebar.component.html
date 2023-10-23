@@ -1,16 +1,18 @@
-<div class="px-[32px] py-[54px] bg-white h-full">
-        <div class="mb-[69px]">
-                <img src="assets/logo.png" alt="oasis" class="w-[121px]">
-        </div>
-        <div>
-                <ul class="flex flex-col gap-[24px]">
-                        <li *ngFor="let link of links">
-                                <a href={{link.linkUrl}} class="flex align-center gap-3 py-[10px] px-[20px]">
-                                        <img [src]="link.iconUrl" alt={{link.name}} class="w-[24px]">
-                                        <span class="text-sm text-[#8E92BC]">{{link.name}}</span>
-
-                                </a>
-                        </li>
-                </ul>
-        </div>
+<div class="px-[32px] py-[54px] bg-white h-screen">
+  <div class="mb-[69px]">
+    <img src="assets/logo.png" alt="oasis" class="w-[121px]" />
+  </div>
+  <div>
+    <ul class="flex flex-col gap-[24px]">
+      <li *ngFor="let link of links">
+        <a
+          href="{{ link.linkUrl }}"
+          class="flex align-center gap-3 py-[10px] px-[20px]"
+        >
+          <img [src]="link.iconUrl" alt="{{ link.name }}" class="w-[24px]" />
+          <span class="text-sm text-[#8E92BC]">{{ link.name }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>

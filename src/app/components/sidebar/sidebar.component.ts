@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent {
+  @Output() closeSidebar = new EventEmitter();
+
   links = [
     {
       name: 'Dashboard',
@@ -28,4 +30,9 @@ export class SidebarComponent {
       linkUrl: '/settings',
     },
   ];
+
+  @HostListener('document:click')
+  onClickedOutside() {
+    this.closeSidebar.emit();
+  }
 }
