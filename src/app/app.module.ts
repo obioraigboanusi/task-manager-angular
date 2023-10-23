@@ -18,6 +18,7 @@ import { OngoingTasksComponent } from './components/ongoing-tasks/ongoing-tasks.
 import { TaskMetricsComponent } from './components/task-metrics/task-metrics.component';
 import { TeamMembersComponent } from './components/team-members/team-members.component';
 import { TaskCardComponent } from './components/task-card/task-card.component';
+import { HorizontalProgressBarComponent } from './components/horizontal-progress-bar/horizontal-progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { TaskCardComponent } from './components/task-card/task-card.component';
     TaskMetricsComponent,
     TeamMembersComponent,
     TaskCardComponent,
+    HorizontalProgressBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatIconModule],
   providers: [],
