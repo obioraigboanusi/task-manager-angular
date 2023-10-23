@@ -1,0 +1,35 @@
+<div class="relative overflow-x-hidden min-h-screen flex bg-[#F5F5F5]">
+  <div
+    class="absolute lg:relative top-0 h-full w-[75vw] max-w-[252px]"
+    [ngClass]="false ? 'left-0' : 'left-[-100%] lg:left-0'"
+  >
+    <app-sidebar />
+  </div>
+  <div class="grow">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <div class="lg:col-span-2 px-">
+        <div class="grid grid-cols-2 gap-3">
+          <div class="col-span-2">
+            <app-dashboard-top-bar />
+          </div>
+          <div class="col-span-2 px-[33px]">
+            <h1 class="text-2xl font-bold text-4xl mb-4">
+              You’ve got 4 tasks today
+            </h1>
+            <app-search-bar />
+          </div>
+          <div class="col-span-2 px-[33px]">
+            <app-ongoing-tasks />
+          </div>
+          <div class="col-span-2 px-[33px]">
+            <div class="grid grid-cols-2">
+              <app-task-metrics />
+              <app-team-members />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#EDEDED] py-[45px] px-[33px]"></div>
+    </div>
+  </div>
+</div>
