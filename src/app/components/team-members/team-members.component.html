@@ -1,1 +1,25 @@
-<p>team-members works!</p>
+<div class="bg-[#546FFF] p-4 rounded">
+  <div class="flex justify-between items-center mb-3">
+    <h3 class="font-bold text-white">Team Members</h3>
+    <button
+      class="h-[19px] px-3 rounded-full text-[#546FFF] bg-white text-[10px]"
+    >
+      See all
+    </button>
+  </div>
+  <ul class="grid gap-3">
+    <li *ngFor="let member of members">
+      <div class="flex items-center gap-3 bg-white rounded px-4 py-1">
+        <img
+          class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
+          src="assets/user.jpeg"
+          alt=""
+        />
+        <div>
+          <h4 class="text-sm font-bold text-[#546FFF]">Maria Memon</h4>
+          <p class="text-[10px] text-[#546FFF]">UI/UX Designer</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
