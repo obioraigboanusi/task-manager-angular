@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./team-members.component.css'],
 })
 export class TeamMembersComponent {
-  members= Array.from({length:6})
+  members= Array.from({length:4})
 }
